@@ -1,0 +1,130 @@
+@import "variables.css";
+@import "fontello.css";
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.header-top {
+    background-color: var(--header-bg-color);
+    color: var(--header-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header__all-chapters, .header__socials-links {
+    width: 20%;
+    text-align: center;
+}
+
+.header__socials-links a {
+    color: var(--socials-links-color);
+}
+
+.icon-facebook:hover {
+    color: var(--facebbok-color);
+}
+
+.icon-twitter:hover {
+    color: var(--twitter-color);
+}
+
+.icon-instagram:hover {
+    color: var(--instagram-color);
+}
+
+.header__logo {
+    text-align: center;
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    text-align: center;
+    padding: 8px;
+}
+
+nav a {
+    margin: 0 5px;
+    color: #000;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+nav a:hover {
+    color: #900022;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.article-author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.article-author__name-profession {
+    padding-left: 20px;
+}
+
+.article-author__avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.article-author__name {
+    text-transform: uppercase;
+    color: var(--author-name-color);
+    font-weight: bold;
+}
+
+.article-author__profession {
+    font-size: 14px;
+}
+
+.article {
+    margin: 10px 0 20px 0;
+}
+
+.article p {
+    text-indent: 15px;
+    margin-top: 5px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+footer {
+    display: flex;
+    background-color: var(--footer-bg-color);
+    height: 50px;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+footer .copyright {
+    text-align: center;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
